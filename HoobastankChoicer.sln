@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hooba-knats", "hooba-knats\hooba-knats.csproj", "{0460F877-82F0-47B5-B1C3-D43459E01737}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0460F877-82F0-47B5-B1C3-D43459E01737}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0460F877-82F0-47B5-B1C3-D43459E01737}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0460F877-82F0-47B5-B1C3-D43459E01737}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0460F877-82F0-47B5-B1C3-D43459E01737}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
