@@ -2,8 +2,15 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:hooba_knats"
-             StartupUri="MainWindow.xaml" Keyboard.KeyUp="Application_OnKeyboardKeyUp">
+             StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <TextBox x:Key="KeyUp" AcceptsReturn="False">
+            <TextBox.InputBindings>
+                <KeyBinding 
+                    Key="Enter" 
+                    Command="{Binding SearchCommand}" 
+                    CommandParameter="{Binding Path=Text, RelativeSource={RelativeSource AncestorType={x:Type TextBox}}}" />
+            </TextBox.InputBindings>
+        </TextBox>
     </Application.Resources>
 </Application>
