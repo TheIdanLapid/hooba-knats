@@ -6,11 +6,15 @@
     <Application.Resources>
         <TextBox x:Key="KeyUp" AcceptsReturn="False">
             <TextBox.InputBindings>
-                <KeyBinding 
-                    Key="Enter" 
-                    Command="{Binding SearchCommand}" 
-                    CommandParameter="{Binding Path=Text, RelativeSource={RelativeSource AncestorType={x:Type TextBox}}}" />
-            </TextBox.InputBindings>
+                <KeyBinding Key="Enter">
+                    <KeyBinding.CommandParameter>
+                        <Binding Path="Text" RelativeSource="{RelativeSource AncestorType={x:Type TextBox}}" />
+                    </KeyBinding.CommandParameter>
+                <KeyBinding.Command>
+                        <Binding />
+                    </KeyBinding.Command>
+                </KeyBinding>
+              </TextBox.InputBindings>
         </TextBox>
     </Application.Resources>
 </Application>
